@@ -60,13 +60,14 @@ let Droid = 0
 Droid = 0
 game.setLife(5)
 xs = 2
-let Scene = images.createBigImage(`
+let Scene = 0
+images.createBigImage(`
     . . . . . . . . . .
     . # # # . . . # . .
     # # # # . . . . . .
     # # # # . . . . # .
-    . . # # # . . # . .
-    `)
+    . # # # # . . # . .
+    `).scrollImage(1, 200)
 basic.showLeds(`
     . . . . .
     . # # # .
