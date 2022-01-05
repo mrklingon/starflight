@@ -11,18 +11,23 @@ function MkStars () {
     }
 }
 input.onButtonPressed(Button.A, function () {
+    music.playTone(131, music.beat(BeatFraction.Quarter))
     xs += -1
     if (xs < 0) {
         xs = 0
     }
 })
 input.onButtonPressed(Button.AB, function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
     for (let index = 0; index <= 4; index++) {
         num = 4 - index
         led.plotBrightness(xs, num, 240)
+        basic.pause(100)
+        led.plotBrightness(xs, num, 0)
     }
 })
 input.onButtonPressed(Button.B, function () {
+    music.playTone(523, music.beat(BeatFraction.Quarter))
     xs += 1
     if (xs > 4) {
         xs = 4
