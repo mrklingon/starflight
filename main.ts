@@ -18,6 +18,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
+    music.playTone(262, music.beat(BeatFraction.Half))
     Phaser()
 })
 input.onButtonPressed(Button.B, function () {
@@ -36,7 +37,6 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 function Phaser () {
-    music.playTone(262, music.beat(BeatFraction.Half))
     for (let index = 0; index <= 4; index++) {
         num = 4 - index
         led.plotBrightness(xs, num, 240)
@@ -60,13 +60,6 @@ let Droid = 0
 Droid = 0
 game.setLife(5)
 xs = 2
-let runabout = images.createImage(`
-    . # # # .
-    . # # # #
-    . # # # #
-    # # # . .
-    . . . . .
-    `)
 let Scene = images.createBigImage(`
     . . . . . . . . . .
     . # # # . . . # . .
@@ -74,9 +67,14 @@ let Scene = images.createBigImage(`
     # # # # . . . . # .
     . . # # # . . # . .
     `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # # #
+    . # # # #
+    # # # . .
+    `)
 basic.pause(500)
-Scene.scrollImage(1, 200)
-runabout.scrollImage(-1, 200)
 basic.forever(function () {
     while (!(game.isGameOver())) {
         basic.pause(randint(1000, 3000))
