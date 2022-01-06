@@ -37,11 +37,14 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 function Phaser () {
-    for (let index = 0; index <= 4; index++) {
-        num = 4 - index
-        led.plotBrightness(xs, num, 240)
-        basic.pause(100)
-        led.plotBrightness(xs, num, 0)
+    if (xs != LastP) {
+        for (let index = 0; index <= 4; index++) {
+            num = 4 - index
+            led.plotBrightness(xs, num, 240)
+            basic.pause(100)
+            led.plotBrightness(xs, num, 0)
+        }
+        LastP = xs
     }
 }
 function mvStars () {
@@ -54,6 +57,7 @@ function mvStars () {
 }
 let ye = 0
 let num = 0
+let LastP = 0
 let jam = 0
 let xs = 0
 let Droid = 0
@@ -68,6 +72,13 @@ images.createBigImage(`
     # # # # . . . . # .
     . # # # # . . # . .
     `).scrollImage(1, 200)
+images.createImage(`
+    . . . . .
+    . # # # .
+    . # # # #
+    . # # # #
+    # # # . .
+    `).scrollImage(-1, 200)
 basic.showLeds(`
     . . . . .
     . # # # .
