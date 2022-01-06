@@ -4,12 +4,12 @@
         # # # # . . . . . . 
         # # # # . . . . # . 
         . # # # # . . # . .
-        `</field></block></value><value name="frameoffset"><shadow type="math_number" id="qwj?Y[qQyZxY]N(8SYfT"><field name="NUM">1</field></shadow></value><value name="delay"><shadow type="math_number" id="d-wG!yaAjed/hhyNV9uy"><field name="NUM">200</field></shadow></value><next><block type="device_scroll_image" id="PYxJ+!jh./jKE45cToM8"><value name="sprite"><block type="device_build_image" id="@]@//~Y)Q)DiQvKyBe:y"><field name="LEDS">`
-        . . . . . 
-        . # # # . 
-        . # # # # 
-        . # # # # 
-        # # # . .
+        `</field></block></value><value name="frameoffset"><shadow type="math_number" id="qwj?Y[qQyZxY]N(8SYfT"><field name="NUM">1</field></shadow></value><value name="delay"><shadow type="math_number" id="d-wG!yaAjed/hhyNV9uy"><field name="NUM">200</field></shadow></value><next><block type="device_scroll_image" id="PYxJ+!jh./jKE45cToM8"><value name="sprite"><block type="device_build_big_image" id="2J!x]+s}{TCvcT]M[]Xb"><field name="LEDS">`
+        . . . . . . . . . . 
+        . # # # . . . . . . 
+        . # # # # . . # . # 
+        . # # # # . . . . . 
+        # # # # . . # . . .
         `</field></block></value><value name="frameoffset"><shadow type="math_number" id="_D,NvTA?A?dtg]/gB`i`"><field name="NUM">-1</field></shadow></value><value name="delay"><shadow type="math_number" id="`D8@vf^Ox?%~v(@[k5JR"><field name="NUM">200</field></shadow></value><next><block type="device_show_leds" id="|s?H:T.M?E?6|2dLamKX"><field name="LEDS">`
         . . . . . 
         . # # # . 

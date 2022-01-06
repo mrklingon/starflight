@@ -72,12 +72,12 @@ images.createBigImage(`
     # # # # . . . . # .
     . # # # # . . # . .
     `).scrollImage(1, 200)
-images.createImage(`
-    . . . . .
-    . # # # .
-    . # # # #
-    . # # # #
-    # # # . .
+images.createBigImage(`
+    . . . . . . . . . .
+    . # # # . . . . . .
+    . # # # # . . # . #
+    . # # # # . . . . .
+    # # # # . . # . . .
     `).scrollImage(-1, 200)
 basic.showLeds(`
     . . . . .
